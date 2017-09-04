@@ -164,7 +164,8 @@ textarea.form-control{
 @media(max-width: 599px){
 	.title{
     font-size: 15px;
-    letter-spacing: .2em;
+	letter-spacing: .2em;
+	text-align: center;
 	}
 	.title.text-light{
 	letter-spacing: .2em;
@@ -227,6 +228,9 @@ textarea.form-control{
 		display: block;
 		text-align: right;
 		padding: 10px 15px;
+	}
+	.logo {
+		line-height: 34px;
 	}
 }
 .inner{
@@ -431,6 +435,12 @@ textarea.form-control{
 		padding-top: 50px;
 	}
 }
+@media(max-width: 767px){
+	.nav-tabs>li{
+		width: 33.33%;
+		margin-top: 15px;
+	}
+}
 @media(max-width: 599px){
 	.nav-tabs li .tablist-title{
 		letter-spacing: 0;
@@ -439,11 +449,8 @@ textarea.form-control{
 	.tab-content .tab-pane{
 		padding-top: 30px;
 	}
-}
-@media(max-width: 479px){
 	.nav-tabs>li{
-		width: 33.33%;
-		margin-top: 10px;
+		width: 50%;
 	}
 }
 .lets-talk{
@@ -525,15 +532,27 @@ textarea.form-control{
 	font-size: 11px;
 	}
 }
-@media (max-width: 479px) {
+@media (max-width: 599px) {
 	.portfolio .nav-tabs li{
 		width: 50%;
 	}
 	.portfolio .nav-tabs{
-		max-width: 250px;
+		max-width: 400px;
 	}
 	.portfolio-info {
 		margin-bottom: 25px;
+	}	
+	.portfolio-col {
+		width: 100%;
+		padding: 0 8px;
+	}
+}
+@media (max-width: 479px) {
+	.portfolio .nav-tabs li{
+		width: 100%;
+	}
+	.portfolio .nav-tabs{
+		max-width: 250px;
 	}
 }
 .creative-works{
@@ -762,15 +781,20 @@ textarea.form-control{
 	color: #111;
 }
 @media (max-width: 767px){
-	.latest-news{
-		text-align: center;
-	}
 	.news-item {
 		margin-bottom: 15px;
+		text-align: center;
+	}
+	.news-item img{
+		width: 100%;
 	}
 }
-@media (max-width: 479px){
-	a.all-news{
+@media (max-width: 599px){
+	.latest-news .title{
+		text-align: center;
+	}
+		a.all-news{
+		padding-top: 15px;
 		display: block;
 		float: none;
 		text-align: center;
@@ -866,6 +890,7 @@ textarea.form-control{
 		float: none;
 	}
 	.form-col{
+		margin-top: 50px;
 		width: 100%;
 		text-align: center;
 	}
