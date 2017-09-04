@@ -438,7 +438,7 @@ textarea.form-control{
 @media(max-width: 767px){
 	.nav-tabs>li{
 		width: 33.33%;
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 }
 @media(max-width: 599px){
